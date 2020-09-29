@@ -1,0 +1,20 @@
+<!-- Generated template for the ScoreComponent component -->
+<div>
+  <div class="playerScore"> Score: {{score}}/10 </div>
+  <div class="lives"> 
+  	<!--This uses the livesArray (filled by the setLiveArray method in ts), if true a heart is inputted, if false a heart outline is inputted-->
+  	<ion-icon *ngFor="let item of livesArray" class="life" [name]="item != false ? 'heart' : 'heart-outline'" color="primary"></ion-icon>
+  </div>
+  
+<!--This brings in the questions and answers from the API, if wrong answer is chosen removelife and presentwrong are run. If correct answer is chosen, addscore and presentcorrect is run -->
+<div *ngFor="let y of generalKnowQuestions">
+{{y.question}} 
+<div class="row">
+  <div class="col" float-left>
+    <button ion-button block outline color="primary" (click)="addScore();presentCorrect();"><p ion-text color="secondary">A: {{y.correct_answer}}&nbsp;</p></button>
+      </div>
+    <div class="col" float-right>
+      <button ion-button block outline color="primary"(click)="removeLife();presentWrong(); "><p ion-text color="secondary" >B: {{y.incorrect_answers}} &nbsp;</p></button>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center float-center> <!--Align navbar text center-->
+      <!--Heading 1 tag, color silver "Quiz Night and blankspace". Followed by moon icon colour gold-->
+      <h1 ion-text color="secondary">Quiz Night &nbsp;<ion-icon color="primary" name="moon"></ion-icon></h1>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!--Actual page content follows-->
+<ion-content padding>
+
+  <!--div holding a piece of text-->
+  <div text-center>
+      <!--Welcome message to the used immediately above the image-->
+      <h2 ion-text color="secondary">Welcome To</h2>
+  </div>
+
+  <!--Ion-card used to insert image to homepage-->
+  <ion-card>
+    <img src="assets/imgs/QuizNight.png"/>
+  </ion-card>
+
+  <div class="row">
+    <div class="col" text-center>
+      <button ion-button color="primary" large round (click)="openCategoriesPage()"><p ion-text color="dark"><b>Press to Play &nbsp;</b></p>
+      <ion-icon color="dark" name="play"></ion-icon></button>
+    </div>
+  </div>
+
+  <div text-center padding-vertical>
+    <button ion-button outline color="primary" large block (click)="openAboutPage()">
+      <p ion-text color="secondary">About Us &nbsp;</p>
+      <ion-icon color="primary" name="information-circle"></ion-icon>
+    </button>
+  </div>
+</ion-content>

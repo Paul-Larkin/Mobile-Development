@@ -1,0 +1,20 @@
+score {
+	font-size: 20pt;
+
+	.playerScore{
+		font-size: 18pt;
+		width: 45%;
+		display: inline-block;
+		color: #C5B358;
+	}
+
+	.lives{
+		width: 49%;
+		display: inline-block;
+		text-align: right;
+
+		.life{
+			margin: 3px;
+		}
+	}
+}
