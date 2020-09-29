@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="frame">
+    <h1>Meal Generator</h1>
+    <div class="meal">
+      <button type="button" class="btn btn-success " onclick="generateMeal(starters, 'starter')">Starter</button>
+      <span id="starter">None</span>
+    </div><br>
+    <div class="meal">
+      <button type="button" class="btn btn-success" onclick="generateMeal(mains, 'main')">Main Course</button>
+      <span id="main">None</span>
+    </div><br>
+    <div class="meal">
+      <button type="button" class="btn btn-success" onclick="generateMeal(desserts, 'dessert')">Dessert</button>
+      <span id="dessert">None</span>
+    </div><br>
+    <div class="section">
+      <button id="reset" type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
