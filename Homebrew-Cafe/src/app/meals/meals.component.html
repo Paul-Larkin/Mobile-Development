@@ -1,0 +1,12 @@
+<div id="menu">
+  <h2 class="text-light">Menu</h2>
+  <ul class="lead">
+    <li *ngFor="let item of theMenu">
+      <div id="menu-item">
+        Course: <strong>{{item.course}}</strong><br/> 
+        Price: €{{item.price}}<br/> 
+        Name: {{item.name}} 
+      </div>
+    </li>
+  </ul>
+</div>

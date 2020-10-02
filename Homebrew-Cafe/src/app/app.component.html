@@ -1,0 +1,21 @@
+<div class = "container">
+  <div class = "row">
+      <h1><b>{{ title }}</b></h1>
+      <div id="banner">
+        <h2 class="text-center">About Us</h2>
+        <p class = "lead text-justify">
+          The <strong>{{title}}</strong> opened in September 2020 and is primarily managed by Paul Larkin. Paul is a graduate of the Department of Computer Science at Maynooth University.  
+         </p>
+         <h4 class="text-center">Opening Hours</h4>
+         <p class = "lead text-justify">
+           The {{ title }} opening hours are <strong>{{ openingHours }}</strong>
+         </p>
+      </div>
+   </div>
+   <div layout="row" layout-align="center center" style="min-height: 500px">
+    <app-meals></app-meals>
+  </div>
+  <footer class="row">
+    <p>Paul Larkin 2020&copy;</p>
+  </footer>
+</div>
