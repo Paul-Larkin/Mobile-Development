@@ -1,2 +1,2 @@
 # Mobile-Develpoment
-Lab sessions from CS365 Mobile Application Development
+Angular/Ionic Apps based on Lab sessions from CS365 Mobile Application Development
